@@ -1,0 +1,128 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(251, 245, 245);
+    max-width: 100%;
+}
+
+p{
+    font-size: 13pt;
+    background-color: rgb(251, 245, 245);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    text-align: center;
+}
+h2{
+    color: red;
+}
+h3{
+    color: red;
+}
+
+header{
+    background-color: rgb(251, 245, 245);
+}
+footer{
+    background-color: rgb(240, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+color: darkred;
+padding: 15px 32px;
+font-size: 16px;
+border: none;
+background-color: rgb(253, 251, 248);
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    gap: 300px;
+    background-color: rgb(254, 251, 251);
+}
+.navigation a{
+    background-color: rgb(254, 251, 251);
+}
+.navigation :hover{
+    background-color: rgb(252, 114, 114);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+    /*container for webpage layout*/
+
+}
+.container div{
+    background-color: rgb(251, 173, 179);
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (min-width:330px) and (max-width:768px) {
+    body {
+
+ p{
+    font-size: 10pt;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+header{
+    background-color: floralwhite;
+}
+footer{
+    background-color: rgb(240, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    gap: 300px;
+    background-color: rgb(251, 245, 245);
+}
+.navigation a{
+    background-color: rgb(254, 251, 251);
+}
+.navigation :hover{
+    background-color: rgb(252, 114, 114);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+    /*container for webpage layout*/
+
+
+.container div{
+    background-color: chartreuse;
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}  

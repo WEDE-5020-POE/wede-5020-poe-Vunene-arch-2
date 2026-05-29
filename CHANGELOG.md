@@ -7,12 +7,18 @@ This project follows Semantic Versioning.
 ## [1.0.0] 
 ### Added
 - xyz
+- Linked 'style.css' to 'index.html,services.html,about.html,contact us.html,enquiry.html' using <link rel="css/style.css">
+- dded 'style.css' to handle all pages styling separatly from html
+- Created CSS classes for navbar , button, layout
 
 ### Changed
 - xyz
+- Adjusted HTML for better accessibility  
 
 ### Fixed
 - xyz
+- fixed misaligned navigation links by replacing table layout with flexbox in CSS
+- Corrected spacing issues on services
 
 ## Semantic Versioning
 
