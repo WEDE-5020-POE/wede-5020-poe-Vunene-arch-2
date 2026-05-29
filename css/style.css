@@ -28,12 +28,12 @@ h2{
 h3{
     color: red;
 }
-
+  
 header{
     background-color: rgb(251, 245, 245);
 }
 footer{
-    background-color: rgb(240, 0, 0);
+    background-color: rgb(207, 50, 92);
     text-align: center;
     padding: 20px;
 }
@@ -43,8 +43,10 @@ color: darkred;
 padding: 15px 32px;
 font-size: 16px;
 border: none;
-background-color: rgb(253, 251, 248);
+background-color: rgb(150, 28, 77);
 }
+
+/*this is the navigation section*/
 
 .navigation {
     display: flex;
@@ -54,6 +56,9 @@ background-color: rgb(253, 251, 248);
 }
 .navigation a{
     background-color: rgb(254, 251, 251);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
 }
 .navigation :hover{
     background-color: rgb(252, 114, 114);
@@ -67,19 +72,32 @@ img{
     /*container for webpage layout*/
 
 }
+/* container for webpage layout*/
+.container{
+    background-color: rgb(251, 173, 179);
+    display: flex;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    max-width: 100%;
+    align-items: center;
+}  
 .container div{
     background-color: rgb(251, 173, 179);
-    display: block;
+   text-align: center;
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
 }
 
-
+  /*this is the media quiry*/
 
 @media screen and (min-width:330px) and (max-width:768px) {
-    body {
-
+    body{
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(251, 245, 245);
+    max-width: 100%;
+}
  p{
     font-size: 10pt;
 }
@@ -93,36 +111,37 @@ header{
     background-color: floralwhite;
 }
 footer{
-    background-color: rgb(240, 0, 0);
+    background-color: rgb(207, 50, 92);
     text-align: center;
     padding: 20px;
 }
 
 .navigation {
-    display: flex;
+    display: block;
     list-style-type: none;
     gap: 300px;
     background-color: rgb(251, 245, 245);
 }
 .navigation a{
     background-color: rgb(254, 251, 251);
+    display: block;
+    padding: 10px;
 }
 .navigation :hover{
     background-color: rgb(252, 114, 114);
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
+h1{
+    font-size: 14px;
 }
-    /*container for webpage layout*/
+p{
+    font-size: 8pt;
+}
 
 
-.container div{
-    background-color: chartreuse;
+.container{
+    background-color: rgb(251, 173, 179);
     display: block;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
 }  
