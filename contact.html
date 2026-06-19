@@ -5,49 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr Price - Contact</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/myscript.js"></script>
+<link rel="javascript" href="js/myscript.js">
+   
 </head>
 <body>
-   <img src="img/mr price logo.png" alt=" Company Logo">
-   <main>
-      
-      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d466520.91876042867!2d29.3722821!3d-24.0065565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smr%20price%20polokwane!5e0!3m2!1sen!2sza!4v1776586044298!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   <h2>Contact Us</h2>
-   <h2>Corporate Head Office</h2>
-   
-      mrpricegroup.com <br>
-      +27 31 310 8000 <br>
-      Upper Level Durban Station Complex, <br>
-       65 Masabalala Yengwa Ave, Stamford Hill, <br>
-       Durban, 4001 <br>
-   
-</body>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSduP2gfNsPJnhcP4miuL8JXV_W9WlQNO5u5fjylUrl-n_4PZg/viewform?embedded=true" width="640" height="852" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</main>
-
-
-   <!--header <section-->
 <header>
-   
+  <img src="img/mr price logo.png" alt="Company Logo">
   <nav>
-     <ul class="navigation">
-       <th><a href="index.html">Home</a></th>
-        <th><a href="contact.html">Contact</a></th>
-        <th><a href="service.html">Services</a></th>
-        <th><a href="enquiry.html">Enquiry</a></th>
-        <th><a href="about.html">About Us</a></th>
-     </ul>
-</nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
 </header>
+<main>
+  <section class="contact-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d466520.91876042867!2d29.3722821!3d-24.0065565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smr%20price%20polokwane!5e0!3m2!1sen!2sza!4v1776586044298!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      <span class="error" id="name-error"></span>
 
-<!--This is the footer section-->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="email-error"></span>
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone" required>
+      <span class="error" id="phone-error"></span>
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="4" required></textarea>
+      <span class="error" id="message-error"></span>
+
+      <button type="submit" class="submit">Send Message</button>
+    </form>
+    
+    <p id="form-success" style="color: black; font-weight: 200;"></p>
+  </section>
+
+  <section class="contact-details">
+    <h2>Corporate Head Office</h2>
+    <p>+27 31 310 8000<br>
+    Upper Level Durban Station Complex,<br>
+    65 Masabalala Yengwa Ave, Stamford Hill<br>
+    Durban, 4001</p>
+  </section>
+
+  <section class="social-links">
+    <a href="https://www.instagram.com/mrpfashion/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="https://www.youtube.com/channel/UCtqxLj43jmuFvpvBmaqWFOw"><ion-icon name="logo-youtube"></ion-icon></a>
+    <a href="https://api.whatsapp.com/send?phone=27645841000"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    <a href="https://www.tiktok.com/@mrpricefashion"><ion-icon name="logo-tiktok"></ion-icon></a>
+    <a href="https://twitter.com/mrpfashion"><ion-icon name="logo-x"></ion-icon></a>
+    <a href="https://www.facebook.com/MRPFASHION/"><ion-icon name="logo-facebook"></ion-icon></a>
+  </section>
+</main>
+<script src="js/myscript.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 <footer>
-
-  
-  <p><center>Copyright Mr Price &copy;:&trade;All righs reserved</center></p>
-  
+  <p><center>Copyright Mr Price &copy; All rights reserved</center></p>
 </footer>
- 
-
-
 </body>
 </html>

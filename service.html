@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr Price - Services</title>
     <link rel="stylesheet" href="css/style.css">
+    <script script src="js/myscript.js"></script>
+    <script src="js/myscript.js"></script>
+<link rel="javascript" href="js/myscript.js">
+   
+
+    <!--jQuery library and files that load lightbox-->
+    <script> scr="https://code.jquery.com/jquery-3.6.0.min.js"</script>
+
+    <!--External javascript saved in js folder-->
+    <script src="js/myscript.js"></script>
+
+    <!--Lightbox2 CSS- provides the styling for the lightbox, image position, next/previous buttons,
+    close button, captions. without this file , lightbox may still download but will be un styled.-->
+  <link rel="stylesheet" href="https://cdnjs.cloadflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+  <!--Lightbox2 js fuction (was build using jQuery, to fuction it needs jQuery to be loads firsrt).
+  contains the lightbox fuctionallity, opening images in a popup, closing images, gallery navigation,
+  image animation.-->
+  <script src="https://cdnjs.cloadflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 
 <body>
@@ -16,6 +35,116 @@
         We trade predominantly in South Africa and Central and Eastrn Europe, <br>
         with an additional presence across eight sub-Saharan African countries. <br>
     </p> 
+    <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4_wide.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img/price.jpg" onclick="currentSlide(1)" alt="summer vibes">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/services.jpg" onclick="currentSlide(2)" alt="casual">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/mr price.jpg" onclick="currentSlide(3)" alt="sleep wear">
+    </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
 
     </main>
  
@@ -37,7 +166,30 @@
      </div>
 </nav>
 </header>
-  
+<a href="https://www.instagram.com/mrpfashion/?hl=en">
+<ion-icon name="logo-instagram"></ion-icon>
+</a>
+
+<a href="https://www.youtube.com/channel/UCtqxLj43jmuFvpvBmaqWFOw">
+<ion-icon name="logo-youtube"></ion-icon>
+</a>
+<a href="https://api.whatsapp.com/send?phone=27645841000">
+<ion-icon name="logo-whatsapp"></ion-icon>
+</a>
+<a href="https://www.tiktok.com/@mrpricefashion">
+<ion-icon name="logo-tiktok"></ion-icon>
+</a>
+<a href="https://twitter.com/mrpfashion">
+  <ion-icon name="logo-x"></ion-icon>
+</a>
+
+<a href="https://www.facebook.com/MRPFASHION/">
+  <ion-icon name="logo-facebook"></ion-icon>
+</a>
+
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
 
 <!--this is the footer section-->
 <footer>
