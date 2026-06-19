@@ -10,15 +10,19 @@ This project follows Semantic Versioning.
 - Linked 'style.css' to 'index.html,services.html,about.html,contact us.html,enquiry.html' using <link rel="css/style.css">
 - dded 'style.css' to handle all pages styling separatly from html
 - Created CSS classes for navbar , button, layout
+- linked 'myscript.js' to 'index.html,services.html,about.html,contact.html,enquiry.html using 
+<link rel="js/myscripts">
 
 ### Changed
 - xyz
-- Adjusted HTML for better accessibility  
+- Adjusted HTML for better accessibility 
+- Adjusted html forms for better accessibility
 
 ### Fixed
 - xyz
 - fixed misaligned navigation links by replacing table layout with flexbox in CSS
 - Corrected spacing issues on services
+- fix fuctionality of the html contact form
 
 ## Semantic Versioning
 
